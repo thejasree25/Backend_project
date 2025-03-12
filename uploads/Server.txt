@@ -1,0 +1,9 @@
+const express = require("express");
+const App = express();
+App.get("/student",(request,response) =>{
+    response.json({"friends":["Nandini","Priyanka","Krushna"]})
+});
+App.listen(7000,() => {
+    console.log("Server is running on port 7000");
+});
+
